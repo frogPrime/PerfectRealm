@@ -1,0 +1,14 @@
+name: PerfectRealm
+version: '1.0-SNAPSHOT'
+main: Star.perfectRealm.PerfectRealm
+api-version: '1.21'
+commands:
+  perfectrealm:
+    description: 完全境界管理命令（支持小数点）
+    usage: /perfectrealm <set|add|take|reload> <玩家> <等级 (0.0 - 10.0)>
+    permission: perfectrealm.admin
+    permission-message: 你没有权限使用此命令！
+permissions:
+  perfectrealm.admin:
+    description: 允许管理完全境界等级
+    default: op
